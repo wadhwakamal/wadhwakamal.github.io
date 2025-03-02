@@ -1,38 +1,38 @@
 [
-	{
-		"name": "TempMail.Best",
-		"description": "Best Temporary Email.",
-		"image": "/assets/images/projects/tempmail.best.png",
-		"url": "https://tempmail.best"
-	},
-	{
-		"name": "DNS.Surf",
-		"description": "Querying DNS Resolution Results in Different Regions Worldwide.",
-		"image": "/assets/images/projects/dns.surf.png",
-		"url": "https://dns.surf"
-	},
-	{
-		"name": "HTML.ZONE",
-		"description": "Web Toolbox.",
-		"image": "/assets/images/projects/html.zone.png",
-		"url": "https://html.zone"
-	},
-	{
-		"name": "Sink",
-		"description": "A Simple / Speedy / Secure Link Shortener with Analytics.",
-		"image": "/assets/images/projects/sink.cool.png",
-		"url": "https://sink.cool"
-	},
-	{
-		"name": "BroadcastChannel",
-		"description": "Turn your Telegram Channel into a MicroBlog.",
-		"image": "/assets/images/projects/broadcast-channel.png",
-		"url": "https://github.com/ccbikai/BroadcastChannel"
-	},
-	{
-		"name": "L(O*62).ONG",
-		"description": "Make your URL looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooonger",
-		"image": "/assets/images/projects/long.png",
-		"url": "https://loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.ong"
-	}
+  {
+    "name": "City Gear: Sneakers & Fashion",
+    "description": "Shop Shoes, Streetwear Apparel.",
+    "image": "/assets/images/projects/citygear.png",
+    "url": "https://apps.apple.com/us/app/city-gear-sneakers-fashion/id6479300910"
+  },
+  {
+    "name": "Hibbett - Sneakers & Clothing",
+    "description": "Shop Shoes, Clothing & Cleats",
+    "image": "/assets/images/projects/hibbett.png",
+    "url": "https://apps.apple.com/us/app/hibbett-sneakers-clothing/id1325232713"
+  },
+  {
+    "name": "MWH: Fitness + Wellness",
+    "description": "Access 1000+ classes & more.",
+    "image": "/assets/images/projects/mwh.png",
+    "url": "https://apps.apple.com/us/app/mwh-fitness-wellness/id1488181674"
+  },
+  {
+    "name": "Versus Game 2.0",
+    "description": "Fueling fandom more fun and rewarding for audiences.",
+    "image": "/assets/images/projects/vsgame.png",
+    "url": "https://www.versusgame.com/"
+  },
+  {
+    "name": "Toppr Learning App",
+    "description": "Best Learning App for Students.",
+    "image": "/assets/images/projects/toppr.learn.png",
+    "url": "https://medium.com/toppr-blog/building-the-all-new-toppr-ios-apps-d544958b0272"
+  },
+  {
+    "name": "Toppr Doubts On Chat",
+    "description": "When in doubt, ask Toppr.",
+    "image": "/assets/images/projects/toppr.doubts.png",
+    "url": "https://appadvice.com/app/toppr-doubts-jee-neet-cbse/1198215055"
+  }
 ]

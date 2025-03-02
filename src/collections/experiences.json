@@ -1,23 +1,30 @@
 [
-	{
-		"dates": "June 2018 · Present",
-		"role": "Front-end Engineer",
-		"company": "Full Truck Alliance",
-		"description": "Responsible for customer service and CRM system front-end development.",
-		"logo": "/assets/images/experiences/fta.ico"
-	},
-	{
-		"dates": "July 2015 · June 2018",
-		"role": "Front-end Engineer",
-		"company": "YOHO!",
-		"description": "Responsible for mobile front-end development of e-commerce platform.",
-		"logo": "/assets/images/experiences/yoho.ico"
-	},
-	{
-		"dates": "September 2014 · July 2015 ",
-		"role": "Node.JS Developer",
-		"company": "WuLian",
-		"description": "Intern, involved in the development of Internet of Things cloud systems.",
-		"logo": "/assets/images/experiences/wulian.ico"
-	}
+  {
+    "dates": "September 2018 · Present",
+    "role": "Engineer Manager",
+    "company": "Heady Technologies",
+    "description": "Leading engineering teams at Heady—streamlining operations, mentoring talent, and driving agile, data-driven excellence in software development and customer satisfaction.",
+    "logo": "/assets/images/experiences/heady.png"
+  },
+  {
+    "dates": "September 2016 · August 2018",
+    "role": "Lead iOS Developer",
+    "company": "Toppr",
+    "description": "Built innovative mobile apps from design to deployment, leading an iOS team to streamline testing, enhance UIs, and boost user retention in education.",
+    "logo": "/assets/images/experiences/toppr.jpeg"
+  },
+  {
+    "dates": "February 2013 · November 2015",
+    "role": "Application Consultant",
+    "company": "Vistaar",
+    "description": "Engaged with clients to turn their needs into actionable plans, collaborated on app solutions, and bridged communication for continuous improvement.",
+    "logo": "/assets/images/experiences/vistaar.jpg"
+  },
+  {
+    "dates": "June 2012 · January 2013",
+    "role": "Full Stack Developer",
+    "company": "WholeStack",
+    "description": "Collaborated with teams to build core features for seamless UX and robust performance, prototyped and rigorously tested new features, and kept managers updated while adapting to emerging tech.",
+    "logo": "/assets/images/experiences/wholestack.jpg"
+  }
 ]
