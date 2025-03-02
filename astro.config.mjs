@@ -4,6 +4,6 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://kamal.github.io",
+  site: "https://wadhwakamal.github.io",
   integrations: [tailwind()],
 });
