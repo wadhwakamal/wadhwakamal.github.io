@@ -5,6 +5,8 @@ description: A Comprehensive Guide to Modern Security Practices
 dateFormatted: Aug 25, 2024
 ---
 
+![Securing iOS app](/assets/images/posts/secure-ios-app.webp)
+
 Have you ever wondered what happens to your app after it leaves the safe harbor of your development environment and ventures into the wild waters of the App Store? In today's digital landscape, securing your iOS application isn't just a checkbox on your to-do list—it's an ongoing commitment to your users' trust and your app's integrity.
 
 Let me take you on a journey through the fascinating world of iOS security, where we'll explore everything from basic encryption techniques to advanced threat modeling. Whether you're building your first app or looking to fortify your existing codebase, this guide will help you navigate the complex terrain of mobile security with confidence.

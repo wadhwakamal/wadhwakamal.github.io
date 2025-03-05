@@ -5,6 +5,8 @@ description: Building Secure Authentication Flows in SwiftUI
 dateFormatted: Sep 01, 2024
 ---
 
+![Building Secure Authentication Flows in SwiftUI](/assets/images/posts/building-secure-auth-flows-swiftui.webp)
+
 Have you ever stopped to think about how many apps ask for your credentials these days? From social media to banking, streaming services to food delivery—they all want to make sure you're really _you_. Let's dive into how to implement secure authentication in SwiftUI that not only keeps user data safe but also provides a smooth, iOS-native experience.
 
 ## Understanding the Authentication Challenge
