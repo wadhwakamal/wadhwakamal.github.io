@@ -5,6 +5,8 @@ description: When Procrastination Becomes an Optimization Strategy
 dateFormatted: Oct 8, 2023
 ---
 
+![lazy panda resting on a tree](/assets/images/posts/lazy-property.webp)
+
 Ever had one of those days where you think, "I could do this task now, but future me can probably handle it better"? Well, Swift has a built-in procrastination mechanism that's actually encouraged—the `lazy` keyword! Let's dive into what makes this little five-letter word so powerful.
 
 ## The Lazy Revelation

@@ -5,6 +5,8 @@ description: Building Secure Authentication Flows in SwiftUI
 dateFormatted: Oct 14, 2023
 ---
 
+![](/assets/images/posts/higher-order.webp)
+
 Higher-order functions are one of those elegant Swift features that can transform how you write code. While beginners often overlook them in favor of traditional loops, these powerful functions can dramatically streamline your codebase and make it more expressive. Let's dive into what makes higher-order functions so powerful and how you can master them in your iOS development journey.
 
 ## Prerequisites: Understanding Closures
