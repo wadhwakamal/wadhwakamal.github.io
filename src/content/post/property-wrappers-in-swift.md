@@ -26,7 +26,7 @@ Imagine you're developing a fitness tracking app where user metrics like heart r
 ```swift
 class FitnessMetrics {
     private var _heartRate: Int = 70
-    
+
     var heartRate: Int {
         get {
             return _heartRate
@@ -35,9 +35,9 @@ class FitnessMetrics {
             _heartRate = min(max(newValue, 40), 220)
         }
     }
-    
+
     private var _oxygenSaturation: Int = 98
-    
+
     var oxygenSaturation: Int {
         get {
             return _oxygenSaturation
@@ -46,12 +46,13 @@ class FitnessMetrics {
             _oxygenSaturation = min(max(newValue, 70), 100)
         }
     }
-    
+
     // More properties that need similar clamping logic...
 }
 ```
 
 This approach works, but it has several drawbacks:
+
 - Each property requires a backing variable
 - The clamping logic is duplicated across properties
 - The code becomes increasingly verbose as you add more properties
@@ -74,13 +75,13 @@ struct Clamped<Value: Comparable> {
     private var value: Value
     let min: Value
     let max: Value
-    
+
     init(wrappedValue: Value, min: Value, max: Value) {
         self.min = min
         self.max = max
         self.value = Swift.min(Swift.max(wrappedValue, min), max)
     }
-    
+
     var wrappedValue: Value {
         get { value }
         set { value = Swift.min(Swift.max(newValue, min), max) }
@@ -98,10 +99,10 @@ Now we can dramatically simplify our `FitnessMetrics` class:
 class FitnessMetrics {
     @Clamped(min: 40, max: 220)
     var heartRate: Int = 70
-    
+
     @Clamped(min: 70, max: 100)
     var oxygenSaturation: Int = 98
-    
+
     // Additional metrics are just as clean!
     @Clamped(min: 0, max: 300)
     var stepsPerMinute: Int = 0
@@ -109,12 +110,11 @@ class FitnessMetrics {
 ```
 
 The code is now:
+
 - More concise
 - Self-documenting (the valid ranges are right there with the property)
 - Reusable across different properties and even different classes
 - Less prone to implementation errors
-
-(screenshot: Comparison of before/after code showing the dramatic reduction in code size)
 
 ## How It Works Under the Hood
 
@@ -134,12 +134,12 @@ Here's something to be aware of: Swift's implicit handling of the `wrappedValue`
 class ActivityMonitor {
     @Clamped(min: 0, max: 100)
     var intensity: Double
-    
+
     // This won't work as expected!
     init(userIntensity: Double) {
         intensity = userIntensity // Compiler error
     }
-    
+
     // This is the correct approach
     init(userIntensity: Double) {
         _intensity = Clamped(wrappedValue: userIntensity, min: 0, max: 100)
@@ -157,7 +157,7 @@ Property wrappers become even more powerful with the concept of projected values
 @propertyWrapper
 struct Clamped<Value: Comparable> {
     // Previous implementation...
-    
+
     // Add this:
     var projectedValue: Bool {
         // Returns true if the value was clamped
@@ -189,7 +189,7 @@ Beyond our fitness example, property wrappers have many practical uses in iOS de
 struct UserDefault<T> {
     let key: String
     let defaultValue: T
-    
+
     var wrappedValue: T {
         get {
             return UserDefaults.standard.object(forKey: key) as? T ?? defaultValue
@@ -203,7 +203,7 @@ struct UserDefault<T> {
 class SettingsManager {
     @UserDefault(key: "isDarkModeEnabled", defaultValue: false)
     var isDarkModeEnabled: Bool
-    
+
     @UserDefault(key: "username", defaultValue: "")
     var username: String
 }
@@ -216,11 +216,11 @@ class SettingsManager {
 struct AtomicValue<Value> {
     private var value: Value
     private let lock = NSLock()
-    
+
     init(wrappedValue: Value) {
         self.value = wrappedValue
     }
-    
+
     var wrappedValue: Value {
         get {
             lock.lock()
@@ -248,7 +248,7 @@ SwiftUI relies heavily on property wrappers like `@State`, `@Binding`, and `@Obs
 ```swift
 struct ContentView: View {
     @State private var isPlaying: Bool = false
-    
+
     var body: some View {
         Button(action: {
             isPlaying.toggle()
